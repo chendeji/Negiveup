@@ -1,10 +1,34 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Negiveup" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Negiveup" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
-        <item name="android:windowFullscreen">true</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="NoTitle_FullScreen" parent="Theme.Negiveup"> <!--自定义主题名称-->
+        <!--下列两行控制使得应用窗口透明，用于展示一些差异-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置导航栏/状态栏窗口color为透明-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.WhitePageDemoSplash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!--  这三行是重点  -->
+        <!--    设置背景，解决白屏的关键    -->
+        <item name="android:windowBackground">@drawable/init_app_bg</item>
+        <!-- 设置状态栏为白色的，状态栏文字为黑的 -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
 </resources>
