@@ -1,4 +1,4 @@
-package com.example.involution_king;
+package com.josephchen.negiveup;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.involution_king", appContext.getPackageName());
+        assertEquals("com.josephchen.negiveup", appContext.getPackageName());
     }
 }

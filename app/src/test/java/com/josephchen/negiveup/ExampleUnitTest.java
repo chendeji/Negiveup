@@ -1,4 +1,4 @@
-package com.example.involution_king;
+package com.josephchen.negiveup;
 
 import org.junit.Test;
 
