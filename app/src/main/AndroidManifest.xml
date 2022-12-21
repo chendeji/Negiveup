@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.involution_king">
+    package="com.josephchen.negiveup" >
 
     <application
         android:allowBackup="true"
@@ -8,15 +8,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Involution_King">
+        android:theme="@style/Theme.Negiveup" >
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WhitePageDemoSplash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            android:theme="@style/NoTitle_FullScreen" >
+        </activity>
+        <activity
+            android:name=".activity.AddGoalActivity"
+            android:exported="false"
+            android:theme="@style/NoTitle_FullScreen" >
         </activity>
     </application>
 

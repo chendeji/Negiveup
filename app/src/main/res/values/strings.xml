@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Involution_King</string>
+    <string name="app_name">Negiveup</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="splash_app_tip">Never give up on your goals</string>
+    <string name="empty_data">暂时没有数据，点击添加</string>
+    <string name="activity_index_title">首页</string>
+    <string name="activity_add_goal_title">添加</string>
+    <string name="save">保存</string>
+    <string name="title_goal">标题</string>
+    <string name="add_goal_input_content">输入目标内容</string>
+    <string name="add_goal_input_title">输入目标的标题</string>
+    <string name="add_goal_title_content">目标内容</string>
+    <string name="add_goal_start_time">开始时间</string>
+    <string name="add_goal_end_time">结束时间</string>
 </resources>

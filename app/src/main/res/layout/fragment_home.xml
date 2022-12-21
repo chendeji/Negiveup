@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tb_home_toolbar"
+        style="@style/toolbarStyle"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:text="@string/activity_index_title"
+            style="@style/appBarText"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_home_toolbar"
+        android:visibility="visible"
+        android:id="@+id/fl_home_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <include
+            layout="@layout/empty_data_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_home_toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"
+        android:id="@+id/rv_home_goals_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
